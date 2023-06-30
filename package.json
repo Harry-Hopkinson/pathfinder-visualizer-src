@@ -1,18 +1,26 @@
 {
   "name": "pathfinder",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "dependencies": {
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "14.0.0",
+    "@testing-library/user-event": "^14.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^3.0.0"
   },
   "scripts": {
-    "start": "vite dev",
-    "build": "vite build"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
-      "react-app"
+      "react-app",
+      "react-app/jest"
     ]
   },
   "browserslist": {
@@ -26,14 +34,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@types/node": "^20.3.2",
-    "@types/react": "^18.2.14",
-    "@types/react-dom": "^18.2.6",
-    "@vitejs/plugin-react": "^4.0.1",
-    "vite": "^4.3.9",
-    "vite-plugin-svgr": "^3.2.0",
-    "vite-tsconfig-paths": "^4.2.0"
   }
 }
